@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Comaptible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, intial-scaler=1.0">
+        <title> ORGANISATION REGISTRATION </title>
+        <link rel="stylesheet" href="css/styleS.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+        </head>
+<body>
+    <div class="container">
+    <div class= "box">
+        <div class ="plog">
+        <div class ="log">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h2>WELCOME</h2>
+            <div class ="namec">  TO THE ACHARYA LEARNER</div>
+            <div class ="pbtn l"><a href="loginO"><button type="submit" class="btn-form">LOGIN</button></a></div>
+
+            <div class="option">
+              <div id="btn-1"></div>
+              <button onclick="document.location='registerN'" type="button" class="toggle-btn" >NGO</button>
+              <button onclick="document.location='registerO'" type="button" class="toggle-btn">Others</button>
+              </div>
+
+        </div>
+        </div>
+        
+        <div class ="reg-D">
+            <div class ="reg-box">
+            <H1> ORGANISATION REGISTRATION</H1>
+            <form action="/registerO" method="POST">
+                <div class="form-group">
+                    <label for="dname"> ORGANISATION NAME </label>
+                    <input type="text" class="form-control" id="D-NAME" placeholder=" ORGANISATION NAME" name="Oname">
+                  </div>
+                  <div class="form-group">
+                    <label for="ID">ORGANISATION ID </label>
+                    <input type="number" class="form-control" id="D-SEX" placeholder=" ID NO" name="Oid">
+                  </div>
+                  <div class="form-group">
+                    <label for="otype"> ORGANISATION TYPE </label>
+                    <input type="text" class="form-control" id="D-NAME" placeholder=" SCHOOL/COLLAGE/GOVERMENT-HELP" name="Otype">
+                  </div>
+                <div class="form-group">
+                  <label for="emailid">EMAIL ID</label>
+                  <input type="email" class="form-control" id="D-EMAIL" aria-describedby="emailHelp" placeholder=" EMAIL ID" name="Oemail">
+                  
+                </div>
+                <div id="emailhelp" class="form-text">We'll never share your email id with anyone else.</div>
+                <div class="form-group">
+                  <label for="phoneno">PHONE NO</label>
+                  <input type="number" class="form-control" id="D-PHONE" placeholder=" PHONE NO" name="Ophone">
+                </div>
+                <div class="form-group">
+                    <label for="Password">PASSWORD</label>
+                    <input type="password" class="form-control" id="D-PASSWORD" placeholder=" PASSWORD" name="password">
+                  </div>
+                  <div class ="pbtn"><button type="submit" class="btn-form">Register</button></div>
+            </form>
+            </div> 
+                  
+
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
